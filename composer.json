@@ -1,0 +1,21 @@
+{
+	"name": "bleicker/framework",
+	"require": {
+		"symfony/http-foundation": "~2.6"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "4.6"
+	},
+	"authors": [
+		{
+			"name": "Carsten Bleicker",
+			"email": "carsten@bleicker.de"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"Bleicker\\": "src/Bleicker",
+			"Foo\\": "src/Foo"
+		}
+	}
+}
