@@ -96,7 +96,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:cbleicker/bleicker-framework.git",
-                "reference": "d89abf792771812efb7b90452b4b24d46d8f9c0e"
+                "reference": "f8faf53172152735e333ae28f15852d4567b51af"
             },
             "require": {
                 "bleicker/controller": "dev-master",
