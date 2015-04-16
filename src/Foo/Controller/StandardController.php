@@ -1,7 +1,6 @@
 <?php
 
 namespace Foo\Controller;
-use Bleicker\Request\Http\Request;
 
 use Bleicker\Controller\AbstractController;
 
@@ -13,12 +12,18 @@ use Bleicker\Controller\AbstractController;
 class StandardController extends AbstractController {
 
 	/**
+	 * @param string $title
 	 * @return void
 	 */
-	public function indexAction() {
-		/** @var Request $httpRequest */
-		$httpRequest = $this->request->getMainRequest();
-		$title = $httpRequest->query->has('title') ? $httpRequest->query->get('title') : 'Hello World';
+	public function indexAction($title) {
 		$this->view->assign('title', $title);
+	}
+
+	/**
+	 * @param string $title
+	 * @return void
+	 */
+	public function anotherAction($title) {
+		$this->view->assign('title', $title . ' of another Action');
 	}
 }
