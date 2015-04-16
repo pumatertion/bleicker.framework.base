@@ -8,7 +8,7 @@ use Bleicker\Request\Http\Request;
 use Bleicker\Response\Http\Response;
 use Bleicker\Routing\ControllerRouteData;
 use FastRoute\Dispatcher;
-use Foo\Controller\StandardController;
+use App\Controller\StandardController;
 
 include __DIR__ . "/../vendor/autoload.php";
 

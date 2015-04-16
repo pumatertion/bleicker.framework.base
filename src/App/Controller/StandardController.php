@@ -1,13 +1,13 @@
 <?php
 
-namespace Foo\Controller;
+namespace App\Controller;
 
 use Bleicker\Controller\AbstractController;
 
 /**
  * Class StandardController
  *
- * @package Foo\Controller
+ * @package App\Controller
  */
 class StandardController extends AbstractController {
 
