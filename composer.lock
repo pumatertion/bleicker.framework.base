@@ -187,7 +187,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:cbleicker/bleicker-routing.git",
-                "reference": "dfa012bde9ae04074c97f703d2534ea3b4e5023b"
+                "reference": "a7def73b1d8326d58a0426467b66fcd8faf84fb7"
             },
             "require-dev": {
                 "phpunit/phpunit": "*"
@@ -204,7 +204,7 @@
                     "email": "carsten@bleicker.de"
                 }
             ],
-            "time": "2015-04-16 15:06:29"
+            "time": "2015-04-16 16:59:53"
         },
         {
             "name": "bleicker/view",
