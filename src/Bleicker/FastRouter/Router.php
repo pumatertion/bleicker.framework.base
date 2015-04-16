@@ -35,6 +35,7 @@ class Router extends AbstractRouter {
 	 * @param string $uri
 	 * @param string $method
 	 * @return array
+	 * @todo introduce cached routing if context === production
 	 */
 	public function dispatch($uri, $method = 'get') {
 		return FastRoute\simpleDispatcher($this->getDispatchClosuce())->dispatch(strtolower($method), strtolower($uri));
