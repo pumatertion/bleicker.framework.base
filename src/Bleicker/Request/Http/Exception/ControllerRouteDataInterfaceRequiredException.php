@@ -2,7 +2,7 @@
 
 namespace Bleicker\Request\Http\Exception;
 
-use Exception;
+use Bleicker\Exception\ThrowableException as Exception;
 
 /**
  * Class ControllerRouteDataInterfaceRequiredException
