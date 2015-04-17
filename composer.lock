@@ -96,7 +96,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:cbleicker/bleicker-framework.git",
-                "reference": "f8faf53172152735e333ae28f15852d4567b51af"
+                "reference": "62c9b36527a09bd8c5466786512db445daaeed61"
             },
             "require": {
                 "bleicker/controller": "dev-master",
@@ -120,7 +120,7 @@
                     "email": "carsten@bleicker.de"
                 }
             ],
-            "time": "2015-04-16 15:35:33"
+            "time": "2015-04-17 15:45:30"
         },
         {
             "name": "bleicker/request",
@@ -440,12 +440,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpspec/prophecy.git",
-                "reference": "8724cd239f8ef4c046f55a3b18b4d91cc7f3e4c5"
+                "reference": "c58c6dc07d1f76fd66e661418f66eecef931c2b1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/8724cd239f8ef4c046f55a3b18b4d91cc7f3e4c5",
-                "reference": "8724cd239f8ef4c046f55a3b18b4d91cc7f3e4c5",
+                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/c58c6dc07d1f76fd66e661418f66eecef931c2b1",
+                "reference": "c58c6dc07d1f76fd66e661418f66eecef931c2b1",
                 "shasum": ""
             },
             "require": {
@@ -492,7 +492,7 @@
                 "spy",
                 "stub"
             ],
-            "time": "2015-03-27 19:31:25"
+            "time": "2015-04-17 14:44:34"
         },
         {
             "name": "phpunit/php-code-coverage",
