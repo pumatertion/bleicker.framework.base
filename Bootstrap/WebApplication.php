@@ -1,5 +1,7 @@
 <?php
 
+define('ROOT_DIRECTORY', __DIR__ . '/..');
+
 use App\Controller\HomeController;
 use App\Controller\StandardController;
 use Bleicker\Framework\WebApplication;
@@ -7,6 +9,7 @@ use Bleicker\Routing\ControllerRouteData;
 use Bleicker\Routing\RouterInterface;
 
 include __DIR__ . "/../vendor/autoload.php";
+
 
 $app = WebApplication::getInstance();
 
