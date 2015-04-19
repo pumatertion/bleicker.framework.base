@@ -12,7 +12,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:cbleicker/bleicker-controller.git",
-                "reference": "36080e60658122028481456eb4d49831d1c4c4a2"
+                "reference": "263a35e36b8e07c1811a5b19aafa1c8878eb807e"
             },
             "require": {
                 "bleicker/fastrouter": "dev-master",
@@ -34,7 +34,7 @@
                     "email": "carsten@bleicker.de"
                 }
             ],
-            "time": "2015-04-19 09:31:17"
+            "time": "2015-04-19 10:09:30"
         },
         {
             "name": "bleicker/exception",
@@ -96,7 +96,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:cbleicker/bleicker-framework.git",
-                "reference": "c6d04e8ea9aebcad1002697edd3b5b456ea0b7f4"
+                "reference": "6248a7ddce8efb891f9a4ead1b6bbadeb2d9bd78"
             },
             "require": {
                 "bleicker/controller": "dev-master",
@@ -120,7 +120,7 @@
                     "email": "carsten@bleicker.de"
                 }
             ],
-            "time": "2015-04-19 09:30:03"
+            "time": "2015-04-19 10:10:22"
         },
         {
             "name": "bleicker/request",
@@ -128,7 +128,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:cbleicker/bleicker-request.git",
-                "reference": "3f5219c51df35d090ff2979589aae5c128eef018"
+                "reference": "64821da6e862d4cd14328d8c1018c5d6c8823b83"
             },
             "require": {
                 "bleicker/exception": "dev-master",
@@ -151,7 +151,7 @@
                     "email": "carsten@bleicker.de"
                 }
             ],
-            "time": "2015-04-19 09:30:46"
+            "time": "2015-04-19 10:09:50"
         },
         {
             "name": "bleicker/response",
