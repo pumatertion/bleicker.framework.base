@@ -12,7 +12,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:cbleicker/bleicker-controller.git",
-                "reference": "04c2a02377ccb4d3fce4b89355564a36b005f8b5"
+                "reference": "36080e60658122028481456eb4d49831d1c4c4a2"
             },
             "require": {
                 "bleicker/fastrouter": "dev-master",
@@ -34,7 +34,7 @@
                     "email": "carsten@bleicker.de"
                 }
             ],
-            "time": "2015-04-18 09:36:26"
+            "time": "2015-04-19 09:31:17"
         },
         {
             "name": "bleicker/exception",
@@ -96,7 +96,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:cbleicker/bleicker-framework.git",
-                "reference": "f4c6096e817d4fd6d277e7fbbf87b79eaa0b2c8c"
+                "reference": "c6d04e8ea9aebcad1002697edd3b5b456ea0b7f4"
             },
             "require": {
                 "bleicker/controller": "dev-master",
@@ -120,7 +120,7 @@
                     "email": "carsten@bleicker.de"
                 }
             ],
-            "time": "2015-04-18 09:33:47"
+            "time": "2015-04-19 09:30:03"
         },
         {
             "name": "bleicker/request",
@@ -128,7 +128,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:cbleicker/bleicker-request.git",
-                "reference": "cfc186acab19e8991a340255b51d4e4a4c1c2e38"
+                "reference": "3f5219c51df35d090ff2979589aae5c128eef018"
             },
             "require": {
                 "bleicker/exception": "dev-master",
@@ -151,7 +151,7 @@
                     "email": "carsten@bleicker.de"
                 }
             ],
-            "time": "2015-04-18 09:35:57"
+            "time": "2015-04-19 09:30:46"
         },
         {
             "name": "bleicker/response",
@@ -212,7 +212,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:cbleicker/bleicker-view.git",
-                "reference": "b2e5cd8fd79cdab59c3e2f89de76805cb14845b2"
+                "reference": "eed813c6a14c2b43b6446e7cb8918840afa03678"
             },
             "require-dev": {
                 "phpunit/phpunit": "*"
@@ -229,7 +229,7 @@
                     "email": "carsten@bleicker.de"
                 }
             ],
-            "time": "2015-04-18 09:58:54"
+            "time": "2015-04-19 09:30:19"
         },
         {
             "name": "namelesscoder/fluid",
@@ -237,10 +237,11 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NamelessCoder/TYPO3.Fluid.git",
-                "reference": "6765ebc4e8d041ac8c8c6a26da45ac38816faa7a"
+                "reference": "bd0805db82060ee96774179f707890a5f8e5d1fb"
             },
             "require-dev": {
                 "mikey179/vfsstream": "~1.3.0",
+                "namelesscoder/fluid-schema-generator": "*",
                 "phpunit/phpunit": "4.3.*",
                 "satooshi/php-coveralls": "*"
             },
@@ -257,7 +258,7 @@
                 "MIT"
             ],
             "description": "The TYPO3 Fluid template rendering engine",
-            "time": "2015-04-18 09:42:51"
+            "time": "2015-04-18 23:26:15"
         },
         {
             "name": "nikic/fast-route",
