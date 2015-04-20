@@ -128,7 +128,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:cbleicker/bleicker-request.git",
-                "reference": "c7aff09cc3b415845c2d05d8729e3253b3a1f741"
+                "reference": "3e0cdb6e89a0d13ae42cea0b402805c78cc62c01"
             },
             "require": {
                 "bleicker/exception": "dev-master",
@@ -151,7 +151,7 @@
                     "email": "carsten@bleicker.de"
                 }
             ],
-            "time": "2015-04-20 13:53:45"
+            "time": "2015-04-20 14:26:11"
         },
         {
             "name": "bleicker/response",
