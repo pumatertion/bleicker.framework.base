@@ -7,6 +7,8 @@ use Bleicker\Framework\Registry;
 use Bleicker\Framework\WebApplication;
 use Bleicker\Routing\ControllerRouteData;
 use Bleicker\Routing\RouterInterface;
+use TYPO3\Fluid\Core\Cache\FluidCacheInterface;
+use TYPO3\Fluid\Core\Cache\SimpleFileCache;
 
 include __DIR__ . "/../vendor/autoload.php";
 
@@ -26,5 +28,12 @@ $app = new WebApplication();
 $router = Registry::getImplementation(RouterInterface::class);
 $router->addRoute('/', 'get', new ControllerRouteData(ExampleController::class, 'indexAction'));
 $router->addRoute('/user/{user}', 'get', new ControllerRouteData(ExampleController::class, 'userAction'));
+
+/**
+ * Cache Configurations
+ */
+if(getenv('CONTEXT') === 'production'){
+	Registry::addImplementation(FluidCacheInterface::class, new SimpleFileCache(ROOT_DIRECTORY . '/Cache'));
+}
 
 return $app;
