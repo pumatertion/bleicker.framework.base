@@ -27,7 +27,7 @@ $app = new WebApplication();
  */
 $router = Registry::getImplementation(RouterInterface::class);
 $router->addRoute('/', 'get', new ControllerRouteData(ExampleController::class, 'indexAction'));
-$router->addRoute('/user/{user}', 'get', new ControllerRouteData(ExampleController::class, 'userAction'));
+$router->addRoute('/user/{userName}', 'get', new ControllerRouteData(ExampleController::class, 'userAction'));
 
 /**
  * Cache Configurations
