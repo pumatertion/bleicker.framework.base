@@ -17,7 +17,7 @@ $app = new WebApplication();
 /**
  * Generating Application Registry
  *
- * @example $app->getRegistry()->addImplementation(Whatever::class, function () {});
+ * @example Registry::addImplementation(Whatever::class, function () {});
  */
 
 /**
