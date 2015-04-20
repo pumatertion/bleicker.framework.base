@@ -1,39 +1,11 @@
 <?php
 
-define('ROOT_DIRECTORY', __DIR__ . '/..');
-
-use App\Controller\ExampleController;
-use Bleicker\Framework\Registry;
 use Bleicker\Framework\WebApplication;
-use Bleicker\Routing\ControllerRouteData;
-use Bleicker\Routing\RouterInterface;
-use TYPO3\Fluid\Core\Cache\FluidCacheInterface;
-use TYPO3\Fluid\Core\Cache\SimpleFileCache;
 
-include __DIR__ . "/../vendor/autoload.php";
+include __DIR__ . '/../vendor/autoload.php';
+include __DIR__ . '/../Configuration/Constants.php';
 
 $app = new WebApplication();
 
-/**
- * Generating Application Registry
- *
- * @example Registry::addImplementation(Whatever::class, function () {});
- */
-
-/**
- * Routing Configuration
- *
- * @var RouterInterface $router
- */
-$router = Registry::getImplementation(RouterInterface::class);
-$router->addRoute('/', 'get', new ControllerRouteData(ExampleController::class, 'indexAction'));
-$router->addRoute('/user/{userName}', 'get', new ControllerRouteData(ExampleController::class, 'userAction'));
-
-/**
- * Cache Configurations
- */
-if (Registry::get('CONTEXT') === 'production') {
-	Registry::addImplementation(FluidCacheInterface::class, new SimpleFileCache(ROOT_DIRECTORY . '/Cache'));
-}
-
-return $app;
+include __DIR__ . '/../Configuration/Routing.php';
+include __DIR__ . '/../Configuration/Cache.php';
