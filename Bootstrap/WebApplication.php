@@ -2,8 +2,7 @@
 
 define('ROOT_DIRECTORY', __DIR__ . '/..');
 
-use App\Controller\HomeController;
-use App\Controller\StandardController;
+use App\Controller\ExampleController;
 use Bleicker\Framework\Registry;
 use Bleicker\Framework\WebApplication;
 use Bleicker\Routing\ControllerRouteData;
@@ -25,7 +24,7 @@ $app = new WebApplication();
  * @var RouterInterface $router
  */
 $router = Registry::getImplementation(RouterInterface::class);
-$router->addRoute('/', 'get', new ControllerRouteData(HomeController::class, 'indexAction'));
-$router->addRoute('/user/{user}', 'get', new ControllerRouteData(StandardController::class, 'indexAction'));
+$router->addRoute('/', 'get', new ControllerRouteData(ExampleController::class, 'indexAction'));
+$router->addRoute('/user/{user}', 'get', new ControllerRouteData(ExampleController::class, 'userAction'));
 
 return $app;
