@@ -32,7 +32,7 @@ $router->addRoute('/user/{user}', 'get', new ControllerRouteData(ExampleControll
 /**
  * Cache Configurations
  */
-if(getenv('CONTEXT') === 'production'){
+if (getenv('CONTEXT') === 'production') {
 	Registry::addImplementation(FluidCacheInterface::class, new SimpleFileCache(ROOT_DIRECTORY . '/Cache'));
 }
 
