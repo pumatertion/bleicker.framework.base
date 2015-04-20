@@ -13,9 +13,9 @@ class StandardController extends AbstractController {
 
 	/**
 	 * @param string $title
-	 * @return void
+	 * @return string
 	 */
 	public function indexAction($title) {
-		$this->view->assign('title', $title);
+		return $this->view->assign('title', $title)->render();
 	}
 }

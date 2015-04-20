@@ -12,9 +12,9 @@ use Bleicker\Controller\AbstractController;
 class HomeController extends AbstractController {
 
 	/**
-	 * @return void
+	 * @return string
 	 */
 	public function indexAction() {
-		$this->view->assign('title', 'Hello World');
+		return $this->view->assign('title', 'Hello World')->render();
 	}
 }
