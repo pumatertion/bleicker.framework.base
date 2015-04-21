@@ -1,3 +1,4 @@
 /vendor
 /Cache/*.php
 /Private/db.sqlite
+/Configuration/Secrets.php
