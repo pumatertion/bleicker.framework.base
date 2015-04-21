@@ -242,7 +242,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:cbleicker/bleicker-view.git",
-                "reference": "8f13beaaf1ebb634d45837964ec2253b81cd4490"
+                "reference": "e24c581e370697f49171ac3a427a7388a272381e"
             },
             "require-dev": {
                 "phpunit/phpunit": "*"
@@ -259,7 +259,7 @@
                     "email": "carsten@bleicker.de"
                 }
             ],
-            "time": "2015-04-20 12:09:02"
+            "time": "2015-04-21 14:34:37"
         },
         {
             "name": "doctrine/annotations",
