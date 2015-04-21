@@ -27,7 +27,7 @@ class ExampleController extends AbstractController {
 		$example->setName(uniqid('Foo'));
 		$this->entityManager->persist($example);
 		$this->entityManager->flush();
-		return $this->view->assign('id', $example->getId())->assign('name', $example->getName())->render();
+		return $this->view->assignMultiple(['id' => $example->getId(), 'name' => $example->getName()])->render();
 	}
 
 	/**
@@ -36,6 +36,6 @@ class ExampleController extends AbstractController {
 	 */
 	public function getExampleAction($id) {
 		$example = $this->entityManager->find(Example::class, (integer)$id);
-		return $this->view->assign('id', $example->getId())->assign('name', $example->getName())->render();
+		return $this->view->assignMultiple(['id' => $example->getId(), 'name' => $example->getName()])->render();
 	}
 }
