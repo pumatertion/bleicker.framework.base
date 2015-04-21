@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Domain\Model\Example;
 use Bleicker\Controller\AbstractController;
 
 /**
@@ -19,10 +20,22 @@ class ExampleController extends AbstractController {
 	}
 
 	/**
-	 * @param string $userName
 	 * @return string
 	 */
-	public function userAction($userName) {
-		return $this->view->assign('userName', $userName)->render();
+	public function addExampleAction() {
+		$example = new Example();
+		$example->setName(uniqid('Foo'));
+		$this->entityManager->persist($example);
+		$this->entityManager->flush();
+		return $this->view->assign('id', $example->getId())->assign('name', $example->getName())->render();
+	}
+
+	/**
+	 * @param integer $id
+	 * @return string
+	 */
+	public function getExampleAction($id) {
+		$example = $this->entityManager->find(Example::class, (integer)$id);
+		return $this->view->assign('id', $example->getId())->assign('name', $example->getName())->render();
 	}
 }
