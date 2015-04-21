@@ -12,7 +12,7 @@ Registry::add(Cache::class, new CacheImplementation(ROOT_DIRECTORY.'/Cache/Doctr
 
 Registry::addImplementation(EntityManagerInterface::class, EntityManager::create(
 	Registry::get('DbConnection'),
-	Setup::createYAMLMetadataConfiguration(array(__DIR__ . "/Schema/Persistence"), Context::isDevelopment(), NULL, Registry::get(Cache::class))
+	Setup::createYAMLMetadataConfiguration(array(__DIR__ . "/Schema/Persistence"), Context::isDevelopment(), ROOT_DIRECTORY.'/Cache/Proxies', Registry::get(Cache::class))
 ));
 
 $isDev = Context::isDevelopment();
