@@ -8,7 +8,7 @@ use Doctrine\ORM\Tools\Setup;
 
 Registry::addImplementation(EntityManagerInterface::class, EntityManager::create(
 	['driver' => 'pdo_sqlite', 'path' => ROOT_DIRECTORY . '/Private/db.sqlite'],
-	Setup::createYAMLMetadataConfiguration(array(ROOT_DIRECTORY . "/Configuration/Schema/Persistence"), Context::isDevelopment())
+	Setup::createYAMLMetadataConfiguration(array(__DIR__ . "/Schema/Persistence"), Context::isDevelopment())
 ));
 
 \Doctrine\ORM\Tools\Console\ConsoleRunner::createHelperSet(Registry::getImplementation(EntityManagerInterface::class));
