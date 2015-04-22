@@ -40,3 +40,18 @@ Templates are located in the Folder "Templates" an resolved by the namespace of 
 
 ### Your App Stuff ###
 A good location for your Controllers/Services/DomainModels etc is the "App" Folder
+
+### Configuration ###
+Point of Configuration is the Registry. Just use it in your Bootstrap file f.e. like the following Examples.
+
+#### Register General ####
+* Registry::add('Foo', 'Bar');
+* Getting Registry entry everywhere in your code with Registry::get('Foo');
+
+#### Register Objects ####
+* Registry::addImplementation(MyClassInterface::class, new MyClass());
+* Getting the Object everywhere in your Code with ObjectManager::get(MyClassInterface::class);
+
+#### Register Closures ####
+* Registry::addImplementation(MyClassInterface::class, function(){new MyClass()});
+* Getting the Object everywhere in your Code with ObjectManager::get(MyClassInterface::class);
