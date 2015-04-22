@@ -12,7 +12,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:cbleicker/bleicker-controller.git",
-                "reference": "ddbed2d52d8d5c430b1f0621f9139a67702d11f6"
+                "reference": "641c4ce664713b9cc3ad79dd5f49351976db93f6"
             },
             "require": {
                 "bleicker/fastrouter": "dev-master",
@@ -34,7 +34,7 @@
                     "email": "carsten@bleicker.de"
                 }
             ],
-            "time": "2015-04-22 08:46:32"
+            "time": "2015-04-22 09:06:08"
         },
         {
             "name": "bleicker/exception",
@@ -96,7 +96,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:cbleicker/bleicker-framework.git",
-                "reference": "7cfa6aa8411950ab836142891dff894756c2ff8b"
+                "reference": "943f31067c69b4bcb6a68c3cd49484dc5d12c2bb"
             },
             "require": {
                 "bleicker/controller": "dev-master",
@@ -126,7 +126,7 @@
                     "email": "carsten@bleicker.de"
                 }
             ],
-            "time": "2015-04-22 08:19:00"
+            "time": "2015-04-22 09:07:44"
         },
         {
             "name": "bleicker/persistence",
@@ -163,7 +163,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:cbleicker/bleicker-request.git",
-                "reference": "2a354f9382af229faffdd5fb266de8017f6b29b3"
+                "reference": "6b1b6a6a279a818bfdf2cad298953416f690d0fa"
             },
             "require": {
                 "bleicker/exception": "dev-master",
@@ -186,7 +186,7 @@
                     "email": "carsten@bleicker.de"
                 }
             ],
-            "time": "2015-04-21 13:20:00"
+            "time": "2015-04-22 09:05:28"
         },
         {
             "name": "bleicker/response",
@@ -247,7 +247,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:cbleicker/bleicker-view.git",
-                "reference": "91a883945e4cc0e8a628b402634dabf03b17b3c4"
+                "reference": "d8ddfd878d625b8ba3442f84ec86f7b981d3dea1"
             },
             "require-dev": {
                 "namelesscoder/fluid": "*",
@@ -265,7 +265,7 @@
                     "email": "carsten@bleicker.de"
                 }
             ],
-            "time": "2015-04-22 08:07:46"
+            "time": "2015-04-22 09:06:38"
         },
         {
             "name": "doctrine/annotations",
