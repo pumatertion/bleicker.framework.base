@@ -1,4 +1,4 @@
 <?php
 
-include __DIR__ . '/../bootstrap/WebApplication.php';
+include __DIR__ . '/../Bootstrap/WebApplication.php';
 $app->run();
