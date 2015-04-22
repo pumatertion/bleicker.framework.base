@@ -96,7 +96,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:cbleicker/bleicker-framework.git",
-                "reference": "943f31067c69b4bcb6a68c3cd49484dc5d12c2bb"
+                "reference": "73eacee67bbfa8f2d35b54be66a50bc7061f5cbc"
             },
             "require": {
                 "bleicker/controller": "dev-master",
@@ -126,7 +126,7 @@
                     "email": "carsten@bleicker.de"
                 }
             ],
-            "time": "2015-04-22 09:07:44"
+            "time": "2015-04-22 11:36:45"
         },
         {
             "name": "bleicker/persistence",
