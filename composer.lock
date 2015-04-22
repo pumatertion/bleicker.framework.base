@@ -12,7 +12,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:cbleicker/bleicker-controller.git",
-                "reference": "641c4ce664713b9cc3ad79dd5f49351976db93f6"
+                "reference": "a3c6517a8cef77ae8ede3d6d8738c7749f5274dd"
             },
             "require": {
                 "bleicker/fastrouter": "dev-master",
@@ -34,7 +34,7 @@
                     "email": "carsten@bleicker.de"
                 }
             ],
-            "time": "2015-04-22 09:06:08"
+            "time": "2015-04-22 16:55:29"
         },
         {
             "name": "bleicker/exception",
@@ -96,7 +96,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:cbleicker/bleicker-framework.git",
-                "reference": "fa0e8ac99c0c00331a71707d7677dce19e287b57"
+                "reference": "5d022b608cdcaec500fd20e8293fd6f726c1c9fc"
             },
             "require": {
                 "bleicker/controller": "dev-master",
@@ -126,7 +126,7 @@
                     "email": "carsten@bleicker.de"
                 }
             ],
-            "time": "2015-04-22 12:02:10"
+            "time": "2015-04-22 16:54:36"
         },
         {
             "name": "bleicker/persistence",
@@ -163,11 +163,10 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:cbleicker/bleicker-request.git",
-                "reference": "6b1b6a6a279a818bfdf2cad298953416f690d0fa"
+                "reference": "c640addb718a29b118b287a39cde075b8ffa8cfe"
             },
             "require": {
                 "bleicker/exception": "dev-master",
-                "bleicker/fastrouter": "dev-master",
                 "bleicker/view": "dev-master",
                 "symfony/http-foundation": "~2.6"
             },
@@ -186,7 +185,7 @@
                     "email": "carsten@bleicker.de"
                 }
             ],
-            "time": "2015-04-22 09:05:28"
+            "time": "2015-04-22 16:51:46"
         },
         {
             "name": "bleicker/response",
