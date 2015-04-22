@@ -96,7 +96,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:cbleicker/bleicker-framework.git",
-                "reference": "73eacee67bbfa8f2d35b54be66a50bc7061f5cbc"
+                "reference": "fa0e8ac99c0c00331a71707d7677dce19e287b57"
             },
             "require": {
                 "bleicker/controller": "dev-master",
@@ -126,7 +126,7 @@
                     "email": "carsten@bleicker.de"
                 }
             ],
-            "time": "2015-04-22 11:36:45"
+            "time": "2015-04-22 12:02:10"
         },
         {
             "name": "bleicker/persistence",
@@ -247,7 +247,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:cbleicker/bleicker-view.git",
-                "reference": "d8ddfd878d625b8ba3442f84ec86f7b981d3dea1"
+                "reference": "c1c653e861c75ea204f5352f2acdb783b78989d0"
             },
             "require-dev": {
                 "namelesscoder/fluid": "*",
@@ -265,7 +265,7 @@
                     "email": "carsten@bleicker.de"
                 }
             ],
-            "time": "2015-04-22 09:06:38"
+            "time": "2015-04-22 12:02:55"
         },
         {
             "name": "doctrine/annotations",
