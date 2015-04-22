@@ -12,7 +12,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:cbleicker/bleicker-controller.git",
-                "reference": "55bfc9a4a3979311788852c553a26db8f3c54207"
+                "reference": "ddbed2d52d8d5c430b1f0621f9139a67702d11f6"
             },
             "require": {
                 "bleicker/fastrouter": "dev-master",
@@ -34,7 +34,7 @@
                     "email": "carsten@bleicker.de"
                 }
             ],
-            "time": "2015-04-21 13:21:27"
+            "time": "2015-04-22 08:46:32"
         },
         {
             "name": "bleicker/exception",
@@ -96,7 +96,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:cbleicker/bleicker-framework.git",
-                "reference": "0b71bee6c6b856357effe634abb0352646353ea8"
+                "reference": "7cfa6aa8411950ab836142891dff894756c2ff8b"
             },
             "require": {
                 "bleicker/controller": "dev-master",
@@ -115,13 +115,18 @@
                     "Bleicker\\Framework\\": "src"
                 }
             },
+            "autoload-dev": {
+                "psr-4": {
+                    "Tests\\Bleicker\\Framework\\": "tests"
+                }
+            },
             "authors": [
                 {
                     "name": "Carsten Bleicker",
                     "email": "carsten@bleicker.de"
                 }
             ],
-            "time": "2015-04-21 13:25:16"
+            "time": "2015-04-22 08:19:00"
         },
         {
             "name": "bleicker/persistence",
@@ -242,9 +247,10 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:cbleicker/bleicker-view.git",
-                "reference": "e24c581e370697f49171ac3a427a7388a272381e"
+                "reference": "91a883945e4cc0e8a628b402634dabf03b17b3c4"
             },
             "require-dev": {
+                "namelesscoder/fluid": "*",
                 "phpunit/phpunit": "*"
             },
             "type": "library",
@@ -259,7 +265,7 @@
                     "email": "carsten@bleicker.de"
                 }
             ],
-            "time": "2015-04-21 14:34:37"
+            "time": "2015-04-22 08:07:46"
         },
         {
             "name": "doctrine/annotations",
