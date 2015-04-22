@@ -54,4 +54,5 @@ Point of Configuration is the Registry. Just use it in your Bootstrap file f.e. 
 
 #### Register Closures ####
 * Registry::addImplementation(MyClassInterface::class, function(){new MyClass()});
+* To make it a singleton just register it as this: Registry::makeSingletonImplementation(MyClassInterface::class);
 * Getting the Object everywhere in your Code with ObjectManager::get(MyClassInterface::class);
