@@ -6,8 +6,8 @@ use Bleicker\Framework\Utility\ObjectManager;
 use Bleicker\Persistence\EntityManager;
 use Bleicker\Persistence\EntityManagerInterface;
 use Doctrine\Common\Cache\Cache;
-use Doctrine\ORM\Tools\Setup;
 use Doctrine\Common\Cache\FilesystemCache as CacheImplementation;
+use Doctrine\ORM\Tools\Setup;
 
 Registry::addImplementation(Cache::class, function(){
 	return new CacheImplementation(ROOT_DIRECTORY.'/Cache/Doctrine');
