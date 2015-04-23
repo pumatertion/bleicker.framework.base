@@ -5,29 +5,22 @@ namespace Tests\App\Functional;
 use App\Controller\ExampleController;
 use Bleicker\Framework\Security\AccessVoterInterface;
 use Bleicker\Framework\Utility\ObjectManager;
-use Tests\App\UnitTestCase;
-use Bleicker\Framework\ApplicationInterface;
+use Tests\App\FunctionalTestCase;
 
 /**
  * Class ControllerAccessTest
  *
  * @package Tests\App\Functional
  */
-class ControllerAccessTest extends UnitTestCase {
+class ControllerAccessTest extends FunctionalTestCase {
 
 	/**
 	 * @var AccessVoterInterface
 	 */
 	protected $accessVoter;
 
-	/**
-	 * @var ApplicationInterface
-	 */
-	protected $app;
-
 	protected function setUp() {
 		parent::setUp();
-		include_once __DIR__ . '/../../Bootstrap/Webapplication.php';
 		$this->accessVoter = ObjectManager::get(AccessVoterInterface::class);
 	}
 
