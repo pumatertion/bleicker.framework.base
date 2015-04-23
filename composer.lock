@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "82156941eae22189e87f94d0bae1f9f7",
+    "hash": "8524705e56940a4337d33957692f9f55",
     "packages": [
         {
             "name": "bleicker/controller",
@@ -96,7 +96,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:cbleicker/bleicker-framework.git",
-                "reference": "5d022b608cdcaec500fd20e8293fd6f726c1c9fc"
+                "reference": "fb5122f8063e98f70a3a71164b3495b7319fb598"
             },
             "require": {
                 "bleicker/controller": "dev-master",
@@ -104,7 +104,8 @@
                 "bleicker/fastrouter": "dev-master",
                 "bleicker/persistence": "dev-master",
                 "bleicker/request": "dev-master",
-                "bleicker/response": "dev-master"
+                "bleicker/response": "dev-master",
+                "bleicker/security": "dev-master"
             },
             "require-dev": {
                 "phpunit/phpunit": "*"
@@ -126,7 +127,7 @@
                     "email": "carsten@bleicker.de"
                 }
             ],
-            "time": "2015-04-22 16:54:36"
+            "time": "2015-04-23 13:33:38"
         },
         {
             "name": "bleicker/persistence",
@@ -239,6 +240,36 @@
                 }
             ],
             "time": "2015-04-21 13:20:52"
+        },
+        {
+            "name": "bleicker/security",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@bitbucket.org:cbleicker/bleicker-security.git",
+                "reference": "7dcdcedf5890e2579bd987179bb4ca408834d3e8"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Bleicker\\Security\\": "src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Tests\\Bleicker\\Security\\": "tests"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Carsten Bleicker",
+                    "email": "carsten@bleicker.de"
+                }
+            ],
+            "time": "2015-04-23 12:23:50"
         },
         {
             "name": "bleicker/view",
@@ -945,12 +976,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "32f19477d488649a77227d57a7f5775b17cb336b"
+                "reference": "9f7a193bb99947d8b226f4ef3917135b7209a975"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/32f19477d488649a77227d57a7f5775b17cb336b",
-                "reference": "32f19477d488649a77227d57a7f5775b17cb336b",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/9f7a193bb99947d8b226f4ef3917135b7209a975",
+                "reference": "9f7a193bb99947d8b226f4ef3917135b7209a975",
                 "shasum": ""
             },
             "require": {
@@ -994,7 +1025,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "http://symfony.com",
-            "time": "2015-04-11 08:55:16"
+            "time": "2015-04-22 09:30:19"
         },
         {
             "name": "symfony/http-foundation",
@@ -1158,12 +1189,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpspec/prophecy.git",
-                "reference": "c58c6dc07d1f76fd66e661418f66eecef931c2b1"
+                "reference": "08c0d7d648efdaa1491ce8f9ad5df4ec79b3d099"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/c58c6dc07d1f76fd66e661418f66eecef931c2b1",
-                "reference": "c58c6dc07d1f76fd66e661418f66eecef931c2b1",
+                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/08c0d7d648efdaa1491ce8f9ad5df4ec79b3d099",
+                "reference": "08c0d7d648efdaa1491ce8f9ad5df4ec79b3d099",
                 "shasum": ""
             },
             "require": {
@@ -1210,7 +1241,7 @@
                 "spy",
                 "stub"
             ],
-            "time": "2015-04-17 14:44:34"
+            "time": "2015-04-23 08:18:32"
         },
         {
             "name": "phpunit/php-code-coverage",
