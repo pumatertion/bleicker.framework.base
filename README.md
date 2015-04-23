@@ -56,3 +56,9 @@ Point of Configuration is the Registry. Just use it in your Bootstrap file f.e. 
 * Registry::addImplementation(MyClassInterface::class, function(){new MyClass()});
 * To make it a singleton just register it as this: Registry::makeSingletonImplementation(MyClassInterface::class);
 * Getting the Object everywhere in your Code with ObjectManager::get(MyClassInterface::class);
+
+#### Access Security ###
+To secure a Controller::Action you can add a Vote to the AccessVoter Object.
+The Vote receives a Closure wich could be anything you want. The arguments
+of the Controller will be passed to this closure. So if you need them, use them.
+[See this example](https://bitbucket.org/cbleicker/bleicker.framework.base/src/fb1af267310433c91e451b7573e249439142bca1/Configuration/ControllerSecurity.php?at=master)
