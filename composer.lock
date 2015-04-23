@@ -42,7 +42,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:cbleicker/bleicker-exception.git",
-                "reference": "7263ac6575aeafbd18fa007671fb82fe2dd10a17"
+                "reference": "dbf4f68b35189b07eb8c546093015e28dccaaaee"
             },
             "require-dev": {
                 "phpunit/phpunit": "*"
@@ -59,7 +59,7 @@
                     "email": "carsten@bleicker.de"
                 }
             ],
-            "time": "2015-04-21 13:19:22"
+            "time": "2015-04-23 14:10:12"
         },
         {
             "name": "bleicker/fastrouter",
@@ -96,7 +96,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:cbleicker/bleicker-framework.git",
-                "reference": "fb5122f8063e98f70a3a71164b3495b7319fb598"
+                "reference": "8ba46edd063126b707dd710946a96f14dc5e1c02"
             },
             "require": {
                 "bleicker/controller": "dev-master",
@@ -127,7 +127,7 @@
                     "email": "carsten@bleicker.de"
                 }
             ],
-            "time": "2015-04-23 13:33:38"
+            "time": "2015-04-23 14:10:48"
         },
         {
             "name": "bleicker/persistence",
