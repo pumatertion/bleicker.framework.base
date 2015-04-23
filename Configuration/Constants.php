@@ -1,3 +1,5 @@
 <?php
 
-define('ROOT_DIRECTORY', __DIR__ . '/..');
+if (!defined('ROOT_DIRECTORY')) {
+	define('ROOT_DIRECTORY', __DIR__ . '/..');
+}
