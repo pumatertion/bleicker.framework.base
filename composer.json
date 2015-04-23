@@ -64,5 +64,10 @@
 			"App\\": "App"
 		}
 	},
+	"autoload-dev": {
+		"psr-4": {
+			"Tests\\App\\": "tests"
+		}
+	},
 	"minimum-stability": "dev"
 }
