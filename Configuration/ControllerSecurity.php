@@ -11,7 +11,8 @@ use Bleicker\Security\Vote;
 $accessVoter = ObjectManager::get(AccessVoterInterface::class);
 
 /**
- * Do not allow access if argument does not match
+ * Deny access to controller method ExampleController::accessRestrictedAction
+ * if argument does not match "foo".
  */
 $accessVoter->addVote(new Vote(function (array $methodArguments = array()) {
 	$accessKey = Arrays::getValueByPath($methodArguments, '0.accessKey');
