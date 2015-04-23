@@ -38,4 +38,12 @@ class ExampleController extends AbstractController {
 		$example = $this->entityManager->find(Example::class, (integer)$id);
 		return $this->view->assignMultiple(['id' => $example->getId(), 'name' => $example->getName()])->render();
 	}
+
+	/**
+	 * @param string $accessKey
+	 * @return string
+	 */
+	public function accessRestrictedAction($accessKey){
+		return $this->view->assign('accessKey', $accessKey)->render();
+	}
 }
