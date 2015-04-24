@@ -1,7 +1,7 @@
 <?php
 
 use Bleicker\Framework\Context\Context;
-use Bleicker\Framework\Registry;
+use Bleicker\Framework\Utility\ObjectManager;
 use TYPO3\Fluid\Core\Cache\FluidCacheInterface;
 use TYPO3\Fluid\Core\Cache\SimpleFileCache;
 
@@ -9,5 +9,5 @@ use TYPO3\Fluid\Core\Cache\SimpleFileCache;
  * Cache Configurations
  */
 if (Context::isProduction()) {
-	Registry::addImplementation(FluidCacheInterface::class, new SimpleFileCache(ROOT_DIRECTORY . '/Cache'));
+	ObjectManager::register(FluidCacheInterface::class, new SimpleFileCache(ROOT_DIRECTORY . '/Cache'));
 }
