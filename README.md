@@ -54,6 +54,11 @@ A good location for your Controllers/Services/DomainModels etc is the "App" Fold
 * To make it a singleton just register it as this: ObjectManager::makeSingleton(MyClassInterface::class);
 * Getting the Object everywhere in your Code with ObjectManager::get(MyClassInterface::class);
 
+### TypeConverter ###
+TypeConverter can be used to convert some source to a defined target type.
+* Register a TypeConverter with Converter::register('registrationFormDto', new RegistrationFormDtoConverter());
+* Convert a source: Converter::convert($postData, RegistrationFormDtoConverter::class);
+
 #### Access Security ###
 To secure a Controller::Action you can add a Vote to the AccessVoter Object.
 The Vote receives a Closure wich could be anything you want. The arguments
