@@ -96,7 +96,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:cbleicker/bleicker-framework.git",
-                "reference": "b4534247d3dba18c94e3dac1eddaf5b2c2c1094d"
+                "reference": "41dee8f85064c3fc3ec8c6b30d884689340a8c0b"
             },
             "require": {
                 "bleicker/controller": "dev-master",
@@ -127,7 +127,7 @@
                     "email": "carsten@bleicker.de"
                 }
             ],
-            "time": "2015-04-24 00:03:28"
+            "time": "2015-04-24 11:51:52"
         },
         {
             "name": "bleicker/persistence",
@@ -277,7 +277,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:cbleicker/bleicker-view.git",
-                "reference": "c1c653e861c75ea204f5352f2acdb783b78989d0"
+                "reference": "cc78f0598965d210c17d619d034b26560e499380"
             },
             "require-dev": {
                 "namelesscoder/fluid": "*",
@@ -295,7 +295,7 @@
                     "email": "carsten@bleicker.de"
                 }
             ],
-            "time": "2015-04-22 12:02:55"
+            "time": "2015-04-24 11:53:44"
         },
         {
             "name": "doctrine/annotations",
@@ -972,16 +972,15 @@
         {
             "name": "symfony/console",
             "version": "2.8.x-dev",
-            "target-dir": "Symfony/Component/Console",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "9f7a193bb99947d8b226f4ef3917135b7209a975"
+                "reference": "36194c12ded9b0dc2b5d719ad626257b5bbc2d96"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/9f7a193bb99947d8b226f4ef3917135b7209a975",
-                "reference": "9f7a193bb99947d8b226f4ef3917135b7209a975",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/36194c12ded9b0dc2b5d719ad626257b5bbc2d96",
+                "reference": "36194c12ded9b0dc2b5d719ad626257b5bbc2d96",
                 "shasum": ""
             },
             "require": {
@@ -1005,7 +1004,7 @@
                 }
             },
             "autoload": {
-                "psr-0": {
+                "psr-4": {
                     "Symfony\\Component\\Console\\": ""
                 }
             },
@@ -1025,21 +1024,20 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "http://symfony.com",
-            "time": "2015-04-22 09:30:19"
+            "time": "2015-04-24 07:03:44"
         },
         {
             "name": "symfony/http-foundation",
             "version": "2.8.x-dev",
-            "target-dir": "Symfony/Component/HttpFoundation",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/HttpFoundation.git",
-                "reference": "75b824419347be1926b3bb9ad14bb3c09d0b5141"
+                "reference": "6e4144be6747b89ff6375e2d237db4ee808c21c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/HttpFoundation/zipball/75b824419347be1926b3bb9ad14bb3c09d0b5141",
-                "reference": "75b824419347be1926b3bb9ad14bb3c09d0b5141",
+                "url": "https://api.github.com/repos/symfony/HttpFoundation/zipball/6e4144be6747b89ff6375e2d237db4ee808c21c4",
+                "reference": "6e4144be6747b89ff6375e2d237db4ee808c21c4",
                 "shasum": ""
             },
             "require": {
@@ -1056,11 +1054,11 @@
                 }
             },
             "autoload": {
-                "psr-0": {
+                "psr-4": {
                     "Symfony\\Component\\HttpFoundation\\": ""
                 },
                 "classmap": [
-                    "Symfony/Component/HttpFoundation/Resources/stubs"
+                    "Resources/stubs"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1079,21 +1077,20 @@
             ],
             "description": "Symfony HttpFoundation Component",
             "homepage": "http://symfony.com",
-            "time": "2015-04-10 08:56:33"
+            "time": "2015-04-24 07:03:44"
         },
         {
             "name": "symfony/yaml",
             "version": "2.8.x-dev",
-            "target-dir": "Symfony/Component/Yaml",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Yaml.git",
-                "reference": "fdded56dde4ca9efce6322887bf5eaa7bb0aae3e"
+                "reference": "4ededb1d00dc2c65fcd16ae3dafc785f92b3f95f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/fdded56dde4ca9efce6322887bf5eaa7bb0aae3e",
-                "reference": "fdded56dde4ca9efce6322887bf5eaa7bb0aae3e",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/4ededb1d00dc2c65fcd16ae3dafc785f92b3f95f",
+                "reference": "4ededb1d00dc2c65fcd16ae3dafc785f92b3f95f",
                 "shasum": ""
             },
             "require": {
@@ -1109,7 +1106,7 @@
                 }
             },
             "autoload": {
-                "psr-0": {
+                "psr-4": {
                     "Symfony\\Component\\Yaml\\": ""
                 }
             },
@@ -1129,7 +1126,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "http://symfony.com",
-            "time": "2015-04-10 08:56:33"
+            "time": "2015-04-24 07:03:44"
         }
     ],
     "packages-dev": [
