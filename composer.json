@@ -31,10 +31,6 @@
 		},
 		{
 			"type": "git",
-			"url": "git@bitbucket.org:cbleicker/bleicker-controller.git"
-		},
-		{
-			"type": "git",
 			"url": "git@bitbucket.org:cbleicker/bleicker-persistence.git"
 		},
 		{
@@ -59,7 +55,7 @@
 		}
 	],
 	"require": {
-		"bleicker/framework": "dev-master",
+		"bleicker/framework": "~1.0",
 		"namelesscoder/fluid": "dev-master"
 	},
 	"require-dev": {

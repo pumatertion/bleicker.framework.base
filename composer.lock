@@ -4,20 +4,18 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "73609e2b82537103afc8aeedc68bb3f7",
+    "hash": "deb8dd49f47b90cd2fd661e2cb9119a9",
     "packages": [
         {
-            "name": "bleicker/controller",
-            "version": "dev-master",
+            "name": "bleicker/converter",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
-                "url": "git@bitbucket.org:cbleicker/bleicker-controller.git",
-                "reference": "a3c6517a8cef77ae8ede3d6d8738c7749f5274dd"
+                "url": "git@bitbucket.org:cbleicker/bleicker-converter.git",
+                "reference": "093e99f98e641b9512a278f1f15c06f25afde11b"
             },
             "require": {
-                "bleicker/fastrouter": "dev-master",
-                "bleicker/request": "dev-master",
-                "bleicker/response": "dev-master"
+                "bleicker/exception": "~1.0"
             },
             "require-dev": {
                 "phpunit/phpunit": "*"
@@ -25,7 +23,12 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Bleicker\\Controller\\": "src"
+                    "Bleicker\\Converter\\": "src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Tests\\Bleicker\\Converter\\": "tests"
                 }
             },
             "authors": [
@@ -34,15 +37,15 @@
                     "email": "carsten@bleicker.de"
                 }
             ],
-            "time": "2015-04-22 16:55:29"
+            "time": "2015-04-24 14:35:15"
         },
         {
             "name": "bleicker/exception",
-            "version": "dev-master",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:cbleicker/bleicker-exception.git",
-                "reference": "dbf4f68b35189b07eb8c546093015e28dccaaaee"
+                "reference": "35cb95105fd045e5e9cc12bf52a06d874f82957b"
             },
             "require-dev": {
                 "phpunit/phpunit": "*"
@@ -63,14 +66,14 @@
         },
         {
             "name": "bleicker/fastrouter",
-            "version": "dev-master",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:cbleicker/bleicker-fastrouter.git",
-                "reference": "23a5d333a2d1aba7ec8b1f344e168f25b3a592f1"
+                "reference": "26858bab6f91214ab4ca975961df27319ede629f"
             },
             "require": {
-                "bleicker/routing": "dev-master",
+                "bleicker/routing": "~1.0",
                 "nikic/fast-route": "~0.4"
             },
             "require-dev": {
@@ -88,24 +91,28 @@
                     "email": "carsten@bleicker.de"
                 }
             ],
-            "time": "2015-04-20 15:57:34"
+            "time": "2015-04-24 15:05:00"
         },
         {
             "name": "bleicker/framework",
-            "version": "dev-master",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:cbleicker/bleicker-framework.git",
-                "reference": "90fb78112021a302c6b20436e12e4fd74ce1b37a"
+                "reference": "e0001fd4805ac689a5c2b504c4cbe1c40aa0055a"
             },
             "require": {
-                "bleicker/controller": "dev-master",
-                "bleicker/exception": "dev-master",
-                "bleicker/fastrouter": "dev-master",
-                "bleicker/persistence": "dev-master",
-                "bleicker/request": "dev-master",
-                "bleicker/response": "dev-master",
-                "bleicker/security": "dev-master"
+                "bleicker/converter": "~1.0",
+                "bleicker/exception": "~1.0",
+                "bleicker/fastrouter": "~1.0",
+                "bleicker/objectmanager": "~1.0",
+                "bleicker/persistence": "~1.0",
+                "bleicker/registry": "~1.0",
+                "bleicker/request": "~1.0",
+                "bleicker/response": "~1.0",
+                "bleicker/security": "~1.0",
+                "bleicker/view": "~1.0",
+                "namelesscoder/fluid": "dev-master"
             },
             "require-dev": {
                 "phpunit/phpunit": "*"
@@ -127,15 +134,48 @@
                     "email": "carsten@bleicker.de"
                 }
             ],
-            "time": "2015-04-24 13:19:50"
+            "time": "2015-04-24 15:54:25"
+        },
+        {
+            "name": "bleicker/objectmanager",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "git@bitbucket.org:cbleicker/bleicker-objectmanager.git",
+                "reference": "27c474e96abe698e39a07bdd0ad71347bd6e1fe9"
+            },
+            "require": {
+                "bleicker/exception": "~1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Bleicker\\ObjectManager\\": "src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Tests\\Bleicker\\ObjectManager\\": "tests"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Carsten Bleicker",
+                    "email": "carsten@bleicker.de"
+                }
+            ],
+            "time": "2015-04-24 14:32:00"
         },
         {
             "name": "bleicker/persistence",
-            "version": "dev-master",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:cbleicker/bleicker-persistence.git",
-                "reference": "1aa561dbe8bf7969a099784aed2c476b83824da4"
+                "reference": "5ae819de74a5e4ce491fbc2e706af83b9bed761a"
             },
             "require": {
                 "doctrine/orm": "~2.5",
@@ -156,19 +196,47 @@
                     "email": "carsten@bleicker.de"
                 }
             ],
-            "time": "2015-04-21 12:45:59"
+            "time": "2015-04-24 15:14:44"
+        },
+        {
+            "name": "bleicker/registry",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "git@bitbucket.org:cbleicker/bleicker-registry.git",
+                "reference": "1865081dea4807f8f1b907e6df6bae3566fc2b91"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Bleicker\\Registry\\": "src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Tests\\Bleicker\\Registry\\": "tests"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Carsten Bleicker",
+                    "email": "carsten@bleicker.de"
+                }
+            ],
+            "time": "2015-04-24 14:26:11"
         },
         {
             "name": "bleicker/request",
-            "version": "dev-master",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:cbleicker/bleicker-request.git",
-                "reference": "c640addb718a29b118b287a39cde075b8ffa8cfe"
+                "reference": "0014ff5dcde09d0c8721c5500f251f484e1e6ccf"
             },
             "require": {
-                "bleicker/exception": "dev-master",
-                "bleicker/view": "dev-master",
                 "symfony/http-foundation": "~2.6"
             },
             "require-dev": {
@@ -186,15 +254,15 @@
                     "email": "carsten@bleicker.de"
                 }
             ],
-            "time": "2015-04-22 16:51:46"
+            "time": "2015-04-24 15:08:41"
         },
         {
             "name": "bleicker/response",
-            "version": "dev-master",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:cbleicker/bleicker-response.git",
-                "reference": "c07d10419d8a3269489fda52047023c79e872cfb"
+                "reference": "dd94b937c7ebab20df9ce2b15939da725279e09f"
             },
             "require": {
                 "symfony/http-foundation": "~2.6"
@@ -214,15 +282,15 @@
                     "email": "carsten@bleicker.de"
                 }
             ],
-            "time": "2015-04-20 10:45:46"
+            "time": "2015-04-24 15:12:23"
         },
         {
             "name": "bleicker/routing",
-            "version": "dev-master",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:cbleicker/bleicker-routing.git",
-                "reference": "e4d815018713124a0a889a16b6e73e0d471d79aa"
+                "reference": "a6435bf9c579b964e4e9c1629250bb3efc9dd87e"
             },
             "require-dev": {
                 "phpunit/phpunit": "*"
@@ -239,15 +307,15 @@
                     "email": "carsten@bleicker.de"
                 }
             ],
-            "time": "2015-04-21 13:20:52"
+            "time": "2015-04-24 15:00:31"
         },
         {
             "name": "bleicker/security",
-            "version": "dev-master",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:cbleicker/bleicker-security.git",
-                "reference": "83f40dd9946f9a9508f200d2011c188043df67b0"
+                "reference": "7b33e0ad7f09dbd19c757e6604f9435375de362a"
             },
             "require-dev": {
                 "phpunit/phpunit": "*"
@@ -273,14 +341,17 @@
         },
         {
             "name": "bleicker/view",
-            "version": "dev-master",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:cbleicker/bleicker-view.git",
-                "reference": "cc78f0598965d210c17d619d034b26560e499380"
+                "reference": "83dedb234e2cb9f37171ea8364c0dcbcaa402ae2"
+            },
+            "require": {
+                "bleicker/objectmanager": "~1.0",
+                "namelesscoder/fluid": "dev-master"
             },
             "require-dev": {
-                "namelesscoder/fluid": "*",
                 "phpunit/phpunit": "*"
             },
             "type": "library",
@@ -295,7 +366,7 @@
                     "email": "carsten@bleicker.de"
                 }
             ],
-            "time": "2015-04-24 11:53:44"
+            "time": "2015-04-24 15:51:13"
         },
         {
             "name": "doctrine/annotations",
@@ -1988,7 +2059,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "bleicker/framework": 20,
         "namelesscoder/fluid": 20
     },
     "prefer-stable": false,
