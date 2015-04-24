@@ -43,6 +43,18 @@
 		},
 		{
 			"type": "git",
+			"url": "git@bitbucket.org:cbleicker/bleicker-converter.git"
+		},
+		{
+			"type": "git",
+			"url": "git@bitbucket.org:cbleicker/bleicker-objectmanager.git"
+		},
+		{
+			"type": "git",
+			"url": "git@bitbucket.org:cbleicker/bleicker-registry.git"
+		},
+		{
+			"type": "git",
 			"url": "https://github.com/NamelessCoder/TYPO3.Fluid.git"
 		}
 	],
