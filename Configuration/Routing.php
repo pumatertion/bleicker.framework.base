@@ -1,7 +1,7 @@
 <?php
 
 use App\Controller\ExampleController;
-use Bleicker\Framework\Utility\ObjectManager;
+use Bleicker\ObjectManager\ObjectManager;
 use Bleicker\Routing\ControllerRouteData;
 use Bleicker\Routing\RouterInterface;
 

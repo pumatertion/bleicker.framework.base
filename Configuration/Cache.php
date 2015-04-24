@@ -1,7 +1,7 @@
 <?php
 
 use Bleicker\Framework\Context\Context;
-use Bleicker\Framework\Utility\ObjectManager;
+use Bleicker\ObjectManager\ObjectManager;
 use TYPO3\Fluid\Core\Cache\FluidCacheInterface;
 use TYPO3\Fluid\Core\Cache\SimpleFileCache;
 

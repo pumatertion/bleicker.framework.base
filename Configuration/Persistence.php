@@ -1,8 +1,8 @@
 <?php
 
 use Bleicker\Framework\Context\Context;
-use Bleicker\Framework\Registry;
-use Bleicker\Framework\Utility\ObjectManager;
+use Bleicker\Registry\Registry;
+use Bleicker\ObjectManager\ObjectManager;
 use Bleicker\Persistence\EntityManager;
 use Bleicker\Persistence\EntityManagerInterface;
 use Doctrine\Common\Cache\Cache;

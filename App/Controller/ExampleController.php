@@ -3,8 +3,8 @@
 namespace App\Controller;
 
 use App\Domain\Model\Example;
-use Bleicker\Controller\AbstractController;
-use Bleicker\Framework\Object\Converter;
+use Bleicker\Framework\Controller\AbstractController;
+use Bleicker\Converter\Converter;
 
 /**
  * Class ExampleController

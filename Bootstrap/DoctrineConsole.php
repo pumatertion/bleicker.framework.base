@@ -1,6 +1,6 @@
 <?php
 
-use Bleicker\Framework\Utility\ObjectManager;
+use Bleicker\ObjectManager\ObjectManager;
 use Bleicker\Persistence\EntityManagerInterface;
 
 include __DIR__ . '/../vendor/autoload.php';

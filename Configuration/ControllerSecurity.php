@@ -3,7 +3,7 @@
 use App\Controller\ExampleController;
 use Bleicker\Framework\Security\AccessVoterInterface;
 use Bleicker\Framework\Utility\Arrays;
-use Bleicker\Framework\Utility\ObjectManager;
+use Bleicker\ObjectManager\ObjectManager;
 use Bleicker\Security\Exception\AccessDeniedException;
 use Bleicker\Security\Vote;
 

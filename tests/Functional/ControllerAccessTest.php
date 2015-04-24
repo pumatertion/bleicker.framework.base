@@ -4,7 +4,7 @@ namespace Tests\App\Functional;
 
 use App\Controller\ExampleController;
 use Bleicker\Framework\Security\AccessVoterInterface;
-use Bleicker\Framework\Utility\ObjectManager;
+use Bleicker\ObjectManager\ObjectManager;
 use Tests\App\FunctionalTestCase;
 
 /**
