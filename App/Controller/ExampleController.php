@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Domain\Model\Example;
 use Bleicker\Controller\AbstractController;
+use Bleicker\Framework\Object\Converter;
 
 /**
  * Class ExampleController
@@ -35,7 +36,7 @@ class ExampleController extends AbstractController {
 	 * @return string
 	 */
 	public function getExampleAction($id) {
-		$example = $this->entityManager->find(Example::class, (integer)$id);
+		$example = $this->entityManager->find(Example::class, Converter::convert($id, Converter::INTEGER));
 		return $this->view->assignMultiple(['id' => $example->getId(), 'name' => $example->getName()])->render();
 	}
 
