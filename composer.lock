@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8524705e56940a4337d33957692f9f55",
+    "hash": "73609e2b82537103afc8aeedc68bb3f7",
     "packages": [
         {
             "name": "bleicker/controller",
@@ -96,7 +96,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:cbleicker/bleicker-framework.git",
-                "reference": "bc83c99639ce7f14f815b8d5ff44ff809eb0ef4c"
+                "reference": "b4534247d3dba18c94e3dac1eddaf5b2c2c1094d"
             },
             "require": {
                 "bleicker/controller": "dev-master",
@@ -127,7 +127,7 @@
                     "email": "carsten@bleicker.de"
                 }
             ],
-            "time": "2015-04-23 14:17:53"
+            "time": "2015-04-24 00:03:28"
         },
         {
             "name": "bleicker/persistence",
@@ -889,7 +889,7 @@
                     "email": "jonwage@gmail.com"
                 }
             ],
-            "description": "Object-Relational-Mapper for PHP",
+            "description": "Object-Relational-Converter for PHP",
             "homepage": "http://www.doctrine-project.org",
             "keywords": [
                 "database",
