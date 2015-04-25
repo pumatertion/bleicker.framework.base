@@ -71,9 +71,9 @@ TypeConverter can be used to convert some source to a defined target type.
 * Register a TypeConverter with Converter::register('registrationFormDto', new RegistrationFormDtoConverter());
 * Convert a source: Converter::convert($postData, RegistrationFormDtoConverter::class);
 
-#### Access Security ###
+#### Controller Security ###
 
 To secure a Controller::Action you can add a Vote to the AccessVoter Object.
 The Vote receives a Closure wich could be anything you want. The arguments
 of the Controller will be passed to this closure. So if you need them, use them.
-[See this example](https://bitbucket.org/cbleicker/bleicker.framework.base/src/fb1af267310433c91e451b7573e249439142bca1/Configuration/ControllerSecurity.php?at=master)
+[See this example](https://github.com/pumatertion/bleicker.framework.base/blob/master/Configuration/ControllerSecurity.php)
