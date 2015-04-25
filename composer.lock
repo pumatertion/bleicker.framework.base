@@ -8,11 +8,11 @@
     "packages": [
         {
             "name": "bleicker/authentication",
-            "version": "1.0.1",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:cbleicker/bleicker-authentication.git",
-                "reference": "1006350f43018365bc4dd52666168162a2d3cdec"
+                "reference": "decdfb5fafad44b6a869d65416aacaddd954a126"
             },
             "require": {
                 "bleicker/objectmanager": "~1.0",
@@ -39,7 +39,7 @@
                     "email": "carsten@bleicker.de"
                 }
             ],
-            "time": "2015-04-25 15:38:29"
+            "time": "2015-04-25 18:44:03"
         },
         {
             "name": "bleicker/converter",
@@ -130,11 +130,11 @@
         },
         {
             "name": "bleicker/framework",
-            "version": "1.0.2",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:cbleicker/bleicker-framework.git",
-                "reference": "894ae2d42dcf7ee7c0a1fc841918cd2711822e8d"
+                "reference": "6aca25bd48948f23706d7d10d55c54227147227a"
             },
             "require": {
                 "bleicker/converter": "~1.0",
@@ -169,7 +169,7 @@
                     "email": "carsten@bleicker.de"
                 }
             ],
-            "time": "2015-04-25 16:33:47"
+            "time": "2015-04-25 18:48:05"
         },
         {
             "name": "bleicker/objectmanager",
@@ -346,11 +346,11 @@
         },
         {
             "name": "bleicker/security",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:cbleicker/bleicker-security.git",
-                "reference": "1304721cc01f1c5276a7dbc544d6ac267df5f885"
+                "reference": "206ebdac837d0904efb2c92ec254f1e050bff806"
             },
             "require": {
                 "bleicker/authentication": "~1.0"
@@ -375,7 +375,7 @@
                     "email": "carsten@bleicker.de"
                 }
             ],
-            "time": "2015-04-25 16:10:36"
+            "time": "2015-04-25 18:01:41"
         },
         {
             "name": "bleicker/session",
@@ -412,11 +412,11 @@
         },
         {
             "name": "bleicker/token",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:cbleicker/bleicker-token.git",
-                "reference": "4e99f02bfaadcbab3aa56a15c78fc2d6a121721d"
+                "reference": "ac37114eaedd409eed283e657d465270026798a3"
             },
             "require": {
                 "bleicker/objectmanager": "~1.0",
@@ -442,7 +442,7 @@
                     "email": "carsten@bleicker.de"
                 }
             ],
-            "time": "2015-04-25 14:50:43"
+            "time": "2015-04-25 17:54:26"
         },
         {
             "name": "bleicker/view",

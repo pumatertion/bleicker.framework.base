@@ -11,4 +11,5 @@ $app = new WebApplication();
 include __DIR__ . '/../Configuration/Routing.php';
 include __DIR__ . '/../Configuration/Cache.php';
 include __DIR__ . '/../Configuration/Persistence.php';
+include __DIR__ . '/../Configuration/Tokens.php';
 include __DIR__ . '/../Configuration/ControllerSecurity.php';
