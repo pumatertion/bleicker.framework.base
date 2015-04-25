@@ -4,8 +4,43 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "deb8dd49f47b90cd2fd661e2cb9119a9",
+    "hash": "456f9d1807574f5d32ea51d34bd4f5bf",
     "packages": [
+        {
+            "name": "bleicker/authentication",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "git@bitbucket.org:cbleicker/bleicker-authentication.git",
+                "reference": "1006350f43018365bc4dd52666168162a2d3cdec"
+            },
+            "require": {
+                "bleicker/objectmanager": "~1.0",
+                "bleicker/session": "~1.0",
+                "bleicker/token": "~1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Bleicker\\Authentication\\": "src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Tests\\Bleicker\\Authentication\\": "tests"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Carsten Bleicker",
+                    "email": "carsten@bleicker.de"
+                }
+            ],
+            "time": "2015-04-25 15:38:29"
+        },
         {
             "name": "bleicker/converter",
             "version": "1.0.0",
@@ -95,11 +130,11 @@
         },
         {
             "name": "bleicker/framework",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:cbleicker/bleicker-framework.git",
-                "reference": "e0001fd4805ac689a5c2b504c4cbe1c40aa0055a"
+                "reference": "894ae2d42dcf7ee7c0a1fc841918cd2711822e8d"
             },
             "require": {
                 "bleicker/converter": "~1.0",
@@ -134,7 +169,7 @@
                     "email": "carsten@bleicker.de"
                 }
             ],
-            "time": "2015-04-24 15:54:25"
+            "time": "2015-04-25 16:33:47"
         },
         {
             "name": "bleicker/objectmanager",
@@ -311,11 +346,14 @@
         },
         {
             "name": "bleicker/security",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:cbleicker/bleicker-security.git",
-                "reference": "7b33e0ad7f09dbd19c757e6604f9435375de362a"
+                "reference": "1304721cc01f1c5276a7dbc544d6ac267df5f885"
+            },
+            "require": {
+                "bleicker/authentication": "~1.0"
             },
             "require-dev": {
                 "phpunit/phpunit": "*"
@@ -337,7 +375,74 @@
                     "email": "carsten@bleicker.de"
                 }
             ],
-            "time": "2015-04-23 14:18:26"
+            "time": "2015-04-25 16:10:36"
+        },
+        {
+            "name": "bleicker/session",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "git@bitbucket.org:cbleicker/bleicker-session.git",
+                "reference": "dde2c90569e05a471856047664a944ac9062061f"
+            },
+            "require": {
+                "symfony/http-foundation": "~2.6"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Bleicker\\Session\\": "src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Tests\\Bleicker\\Session\\": "tests"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Carsten Bleicker",
+                    "email": "carsten@bleicker.de"
+                }
+            ],
+            "time": "2015-04-25 14:26:09"
+        },
+        {
+            "name": "bleicker/token",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "git@bitbucket.org:cbleicker/bleicker-token.git",
+                "reference": "4e99f02bfaadcbab3aa56a15c78fc2d6a121721d"
+            },
+            "require": {
+                "bleicker/objectmanager": "~1.0",
+                "bleicker/session": "~1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Bleicker\\Token\\": "src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Tests\\Bleicker\\Token\\": "tests"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Carsten Bleicker",
+                    "email": "carsten@bleicker.de"
+                }
+            ],
+            "time": "2015-04-25 14:50:43"
         },
         {
             "name": "bleicker/view",
@@ -960,7 +1065,7 @@
                     "email": "jonwage@gmail.com"
                 }
             ],
-            "description": "Object-Relational-Converter for PHP",
+            "description": "Object-Relational-Mapper for PHP",
             "homepage": "http://www.doctrine-project.org",
             "keywords": [
                 "database",
@@ -974,12 +1079,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NamelessCoder/TYPO3.Fluid.git",
-                "reference": "517b772587fd5cee80c2656e77e4eedca0cf7e29"
+                "reference": "f19ac82cddb9a59ea891b95d2fcae5b82de68b1d"
             },
             "require-dev": {
-                "mikey179/vfsstream": "~1.3.0",
+                "mikey179/vfsstream": "*",
                 "namelesscoder/fluid-schema-generator": "*",
-                "phpunit/phpunit": "4.3.*",
+                "phpunit/phpunit": "*",
                 "satooshi/php-coveralls": "*"
             },
             "bin": [
@@ -995,7 +1100,7 @@
                 "MIT"
             ],
             "description": "The TYPO3 Fluid template rendering engine",
-            "time": "2015-04-20 23:21:01"
+            "time": "2015-04-25 12:41:59"
         },
         {
             "name": "nikic/fast-route",
