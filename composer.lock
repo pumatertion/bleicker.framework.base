@@ -4,15 +4,21 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "456f9d1807574f5d32ea51d34bd4f5bf",
+    "hash": "e59c4376c3b8a7ac08ed20cf1f20fde4",
     "packages": [
         {
             "name": "bleicker/authentication",
-            "version": "1.0.3",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
-                "url": "git@bitbucket.org:cbleicker/bleicker-authentication.git",
-                "reference": "decdfb5fafad44b6a869d65416aacaddd954a126"
+                "url": "https://github.com/pumatertion/bleicker.authentication.git",
+                "reference": "d36d0b54c28e0914cbd5d1500a43155e2da21645"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pumatertion/bleicker.authentication/zipball/d36d0b54c28e0914cbd5d1500a43155e2da21645",
+                "reference": "d36d0b54c28e0914cbd5d1500a43155e2da21645",
+                "shasum": ""
             },
             "require": {
                 "bleicker/objectmanager": "~1.0",
@@ -28,26 +34,28 @@
                     "Bleicker\\Authentication\\": "src"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Tests\\Bleicker\\Authentication\\": "tests"
-                }
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "authors": [
                 {
                     "name": "Carsten Bleicker",
                     "email": "carsten@bleicker.de"
                 }
             ],
-            "time": "2015-04-25 18:44:03"
+            "time": "2015-04-25 20:48:40"
         },
         {
             "name": "bleicker/converter",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
-                "url": "git@bitbucket.org:cbleicker/bleicker-converter.git",
-                "reference": "093e99f98e641b9512a278f1f15c06f25afde11b"
+                "url": "https://github.com/pumatertion/bleicker.converter.git",
+                "reference": "10fbf8ce434f2a246929c4da06b2c02ff8220ccf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pumatertion/bleicker.converter/zipball/10fbf8ce434f2a246929c4da06b2c02ff8220ccf",
+                "reference": "10fbf8ce434f2a246929c4da06b2c02ff8220ccf",
+                "shasum": ""
             },
             "require": {
                 "bleicker/exception": "~1.0"
@@ -61,18 +69,14 @@
                     "Bleicker\\Converter\\": "src"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Tests\\Bleicker\\Converter\\": "tests"
-                }
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "authors": [
                 {
                     "name": "Carsten Bleicker",
                     "email": "carsten@bleicker.de"
                 }
             ],
-            "time": "2015-04-24 14:35:15"
+            "time": "2015-04-25 20:45:49"
         },
         {
             "name": "bleicker/exception",
@@ -101,11 +105,17 @@
         },
         {
             "name": "bleicker/fastrouter",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
-                "url": "git@bitbucket.org:cbleicker/bleicker-fastrouter.git",
-                "reference": "26858bab6f91214ab4ca975961df27319ede629f"
+                "url": "https://github.com/pumatertion/bleicker.fastrouter.git",
+                "reference": "56b3e5bef7c566c6804d7d88f07b21966f4f5c7f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pumatertion/bleicker.fastrouter/zipball/56b3e5bef7c566c6804d7d88f07b21966f4f5c7f",
+                "reference": "56b3e5bef7c566c6804d7d88f07b21966f4f5c7f",
+                "shasum": ""
             },
             "require": {
                 "bleicker/routing": "~1.0",
@@ -120,13 +130,14 @@
                     "Bleicker\\FastRouter\\": "src"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "authors": [
                 {
                     "name": "Carsten Bleicker",
                     "email": "carsten@bleicker.de"
                 }
             ],
-            "time": "2015-04-24 15:05:00"
+            "time": "2015-04-25 20:41:23"
         },
         {
             "name": "bleicker/framework",
@@ -173,11 +184,17 @@
         },
         {
             "name": "bleicker/objectmanager",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
-                "url": "git@bitbucket.org:cbleicker/bleicker-objectmanager.git",
-                "reference": "27c474e96abe698e39a07bdd0ad71347bd6e1fe9"
+                "url": "https://github.com/pumatertion/bleicker.objectmanager.git",
+                "reference": "d3da0cf4e1a0121e53dabdd14bfbc67e54e06c74"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pumatertion/bleicker.objectmanager/zipball/d3da0cf4e1a0121e53dabdd14bfbc67e54e06c74",
+                "reference": "d3da0cf4e1a0121e53dabdd14bfbc67e54e06c74",
+                "shasum": ""
             },
             "require": {
                 "bleicker/exception": "~1.0"
@@ -191,18 +208,14 @@
                     "Bleicker\\ObjectManager\\": "src"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Tests\\Bleicker\\ObjectManager\\": "tests"
-                }
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "authors": [
                 {
                     "name": "Carsten Bleicker",
                     "email": "carsten@bleicker.de"
                 }
             ],
-            "time": "2015-04-24 14:32:00"
+            "time": "2015-04-25 20:32:11"
         },
         {
             "name": "bleicker/persistence",
@@ -346,11 +359,17 @@
         },
         {
             "name": "bleicker/security",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
-                "url": "git@bitbucket.org:cbleicker/bleicker-security.git",
-                "reference": "206ebdac837d0904efb2c92ec254f1e050bff806"
+                "url": "https://github.com/pumatertion/bleicker.security.git",
+                "reference": "09566a452c7bc629a341019655df161aa2f97759"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pumatertion/bleicker.security/zipball/09566a452c7bc629a341019655df161aa2f97759",
+                "reference": "09566a452c7bc629a341019655df161aa2f97759",
+                "shasum": ""
             },
             "require": {
                 "bleicker/authentication": "~1.0"
@@ -364,18 +383,14 @@
                     "Bleicker\\Security\\": "src"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Tests\\Bleicker\\Security\\": "tests"
-                }
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "authors": [
                 {
                     "name": "Carsten Bleicker",
                     "email": "carsten@bleicker.de"
                 }
             ],
-            "time": "2015-04-25 18:01:41"
+            "time": "2015-04-25 20:51:03"
         },
         {
             "name": "bleicker/session",
@@ -412,11 +427,17 @@
         },
         {
             "name": "bleicker/token",
-            "version": "1.0.3",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
-                "url": "git@bitbucket.org:cbleicker/bleicker-token.git",
-                "reference": "ac37114eaedd409eed283e657d465270026798a3"
+                "url": "https://github.com/pumatertion/bleicker.token.git",
+                "reference": "03a87a71cf5c4fd20e1806fe30e9aec0d73b6e6f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pumatertion/bleicker.token/zipball/03a87a71cf5c4fd20e1806fe30e9aec0d73b6e6f",
+                "reference": "03a87a71cf5c4fd20e1806fe30e9aec0d73b6e6f",
+                "shasum": ""
             },
             "require": {
                 "bleicker/objectmanager": "~1.0",
@@ -431,26 +452,28 @@
                     "Bleicker\\Token\\": "src"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Tests\\Bleicker\\Token\\": "tests"
-                }
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "authors": [
                 {
                     "name": "Carsten Bleicker",
                     "email": "carsten@bleicker.de"
                 }
             ],
-            "time": "2015-04-25 17:54:26"
+            "time": "2015-04-25 20:38:11"
         },
         {
             "name": "bleicker/view",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
-                "url": "git@bitbucket.org:cbleicker/bleicker-view.git",
-                "reference": "83dedb234e2cb9f37171ea8364c0dcbcaa402ae2"
+                "url": "https://github.com/pumatertion/bleicker.view.git",
+                "reference": "41a4fb4570d1622ee85e4622eba01b510b589b11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pumatertion/bleicker.view/zipball/41a4fb4570d1622ee85e4622eba01b510b589b11",
+                "reference": "41a4fb4570d1622ee85e4622eba01b510b589b11",
+                "shasum": ""
             },
             "require": {
                 "bleicker/objectmanager": "~1.0",
@@ -465,13 +488,14 @@
                     "Bleicker\\View\\": "src"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "authors": [
                 {
                     "name": "Carsten Bleicker",
                     "email": "carsten@bleicker.de"
                 }
             ],
-            "time": "2015-04-24 15:51:13"
+            "time": "2015-04-25 20:35:27"
         },
         {
             "name": "doctrine/annotations",
