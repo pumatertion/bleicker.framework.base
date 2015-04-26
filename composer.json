@@ -1,7 +1,7 @@
 {
 	"name": "bleicker/framework-base",
 	"require": {
-		"bleicker/framework": "~1.0",
+		"bleicker/framework": "~1.1",
 		"namelesscoder/fluid": "dev-master"
 	},
 	"require-dev": {
