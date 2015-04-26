@@ -1,9 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Restricted Area</title>
-</head>
-<body>
-Access granted for key "{accessKey}"
-</body>
-</html>
+<f:layout name="default" />
+
+<f:section name="docTitle">
+	Access granted for key "{accessKey}"
+</f:section>
+
+<f:section name="docBody">
+	<f:render partial="title" arguments="{title:accessKey}"/>
+	Access granted for key "{accessKey}"
+</f:section>
