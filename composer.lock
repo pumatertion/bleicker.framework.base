@@ -141,11 +141,17 @@
         },
         {
             "name": "bleicker/framework",
-            "version": "1.0.4",
+            "version": "1.0.6",
             "source": {
                 "type": "git",
-                "url": "git@bitbucket.org:cbleicker/bleicker-framework.git",
-                "reference": "6aca25bd48948f23706d7d10d55c54227147227a"
+                "url": "https://github.com/pumatertion/bleicker.framework.git",
+                "reference": "e739234651b1fef787dc3fb62774a3aa2395805d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pumatertion/bleicker.framework/zipball/e739234651b1fef787dc3fb62774a3aa2395805d",
+                "reference": "e739234651b1fef787dc3fb62774a3aa2395805d",
+                "shasum": ""
             },
             "require": {
                 "bleicker/converter": "~1.0",
@@ -169,18 +175,14 @@
                     "Bleicker\\Framework\\": "src"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Tests\\Bleicker\\Framework\\": "tests"
-                }
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "authors": [
                 {
                     "name": "Carsten Bleicker",
                     "email": "carsten@bleicker.de"
                 }
             ],
-            "time": "2015-04-25 18:48:05"
+            "time": "2015-04-26 10:09:42"
         },
         {
             "name": "bleicker/objectmanager",
@@ -1386,12 +1388,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpspec/prophecy.git",
-                "reference": "08c0d7d648efdaa1491ce8f9ad5df4ec79b3d099"
+                "reference": "f4877a09b4210f4cb087823fd2410aee39bdaf02"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/08c0d7d648efdaa1491ce8f9ad5df4ec79b3d099",
-                "reference": "08c0d7d648efdaa1491ce8f9ad5df4ec79b3d099",
+                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/f4877a09b4210f4cb087823fd2410aee39bdaf02",
+                "reference": "f4877a09b4210f4cb087823fd2410aee39bdaf02",
                 "shasum": ""
             },
             "require": {
@@ -1438,7 +1440,7 @@
                 "spy",
                 "stub"
             ],
-            "time": "2015-04-23 08:18:32"
+            "time": "2015-04-25 21:18:56"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -1692,12 +1694,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "43e4df74b8b1b05efac8f9c447f2fb15462a6a41"
+                "reference": "60bbaff8602bd8eaae76196f6427b4b2396c72fb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/43e4df74b8b1b05efac8f9c447f2fb15462a6a41",
-                "reference": "43e4df74b8b1b05efac8f9c447f2fb15462a6a41",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/60bbaff8602bd8eaae76196f6427b4b2396c72fb",
+                "reference": "60bbaff8602bd8eaae76196f6427b4b2396c72fb",
                 "shasum": ""
             },
             "require": {
@@ -1756,7 +1758,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-04-18 08:00:12"
+            "time": "2015-04-18 15:51:25"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
