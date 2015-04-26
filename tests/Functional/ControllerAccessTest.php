@@ -3,7 +3,7 @@
 namespace Tests\App\Functional;
 
 use App\Controller\ExampleController;
-use Bleicker\Framework\Security\AccessVoterInterface;
+use Bleicker\Framework\Security\AccessVoter;
 use Bleicker\ObjectManager\ObjectManager;
 use Tests\App\FunctionalTestCase;
 
@@ -15,21 +15,11 @@ use Tests\App\FunctionalTestCase;
 class ControllerAccessTest extends FunctionalTestCase {
 
 	/**
-	 * @var AccessVoterInterface
-	 */
-	protected $accessVoter;
-
-	protected function setUp() {
-		parent::setUp();
-		$this->accessVoter = ObjectManager::get(AccessVoterInterface::class);
-	}
-
-	/**
 	 * @test
 	 * @expectedException \Bleicker\Security\Exception\AccessDeniedException
 	 */
 	public function exampleControllerMethodDenied() {
-		$this->accessVoter->vote(ExampleController::class . '::accessRestrictedAction', function () {
+		AccessVoter::vote(ExampleController::class . '::accessRestrictedAction', function () {
 		}, array('accessKey' => 'bar'));
 	}
 
@@ -37,7 +27,7 @@ class ControllerAccessTest extends FunctionalTestCase {
 	 * @test
 	 */
 	public function exampleControllerMethodAllowed() {
-		$this->accessVoter->vote(ExampleController::class . '::accessRestrictedAction', function () {
+		AccessVoter::vote(ExampleController::class . '::accessRestrictedAction', function () {
 			$this->assertTrue(TRUE);
 		}, array('accessKey' => 'foo'));
 	}
