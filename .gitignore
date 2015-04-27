@@ -3,3 +3,6 @@
 !/Cache/.gitkeep
 /Private/db.sqlite
 /Configuration/Secrets.php
+/node_modules
+/bower_components
+.sass-cache
