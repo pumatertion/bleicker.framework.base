@@ -16,15 +16,15 @@ Sql Settings
 	cp Configuration/Secrets.Example.php Configuration/Secrets.php
 
 Run cli command to create the db and build needed tables:
-	
+
 	vendor/bin/doctrine orm:schema-tool:update --force --dump-sql
 
-Start a php server process either in development- or production context
+### Start a php server process either in development- or production context ###
 
 Production:
 
 	CONTEXT=production nohup php -S localhost:8001 -t Public >> /dev/null 2>&1 &
-	
+
 Development:
 
 	nohup php -S localhost:8000 -t Public >> /dev/null 2>&1 &
@@ -34,11 +34,11 @@ Open your browser and visit either [Development-Server](http://localhost:8000/) 
 ### Switch to MySql ###
 
 If you want to use mysql instead of sqlite adjust the driver in Secrets.php f.e. to
-	
+
 	['url' => 'mysql://user:secret@localhost/mydb']
-	
+
 And run
-	
+
 	vendor/bin/doctrine orm:schema-tool:update --force --dump-sql
 
 ### Doctrine Mapping ###
@@ -83,8 +83,8 @@ Add Object
 
 	ObjectManager::register(MyClassInterface::class, new MyClass('foo', 'bar'));
 
-Getting the Object everywhere in your Code with 
-	
+Getting the Object everywhere in your Code with
+
 	ObjectManager::get(MyClassInterface::class);
 
 ##### Registering a Closure as Factory #####
@@ -93,12 +93,12 @@ Add Closure
 
 	ObjectManager::register(MyClassInterface::class, function(){new MyClass()});
 
-To make it a singleton just register it as this: 
+To make it a singleton just register it as this:
 
 	ObjectManager::makeSingleton(MyClassInterface::class);
 
-Getting the Object everywhere in your Code with 
-	
+Getting the Object everywhere in your Code with
+
 	ObjectManager::get(MyClassInterface::class);
 
 ### TypeConverter ###
