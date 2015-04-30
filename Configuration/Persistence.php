@@ -16,6 +16,6 @@ ObjectManager::register(Cache::class, function () {
 ObjectManager::register(EntityManagerInterface::class, function () {
 	return EntityManager::create(
 		Registry::get('DbConnection'),
-		Setup::createYAMLMetadataConfiguration(array(__DIR__ . "/Schema/Persistence"), !Context::isProduction(), ROOT_DIRECTORY . '/Cache/Proxies', ObjectManager::get(Cache::class))
+		Setup::createYAMLMetadataConfiguration(array(__DIR__ . "/../App/Schema/Persistence"), !Context::isProduction(), ROOT_DIRECTORY . '/Cache/Proxies', ObjectManager::get(Cache::class))
 	);
 });
