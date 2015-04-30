@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "af3e37f46154a92499ac34f62cc07cee",
+    "hash": "7afdd271dca48241df2d051cac4e8cd3",
     "packages": [
         {
             "name": "bleicker/authentication",
@@ -181,16 +181,16 @@
         },
         {
             "name": "bleicker/framework",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pumatertion/bleicker.framework.git",
-                "reference": "e65022b904eca26ba024ef922e81114679fda35a"
+                "reference": "1ff3cdbc839ba4032386cc8114ef1d27b9e6329a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pumatertion/bleicker.framework/zipball/e65022b904eca26ba024ef922e81114679fda35a",
-                "reference": "e65022b904eca26ba024ef922e81114679fda35a",
+                "url": "https://api.github.com/repos/pumatertion/bleicker.framework/zipball/1ff3cdbc839ba4032386cc8114ef1d27b9e6329a",
+                "reference": "1ff3cdbc839ba4032386cc8114ef1d27b9e6329a",
                 "shasum": ""
             },
             "require": {
@@ -222,7 +222,7 @@
                     "email": "carsten@bleicker.de"
                 }
             ],
-            "time": "2015-04-26 14:10:55"
+            "time": "2015-04-30 06:34:43"
         },
         {
             "name": "bleicker/objectmanager",
@@ -647,12 +647,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/cache.git",
-                "reference": "c9eadeb743ac6199f7eec423cb9426bc518b7b03"
+                "reference": "9d141335b758cbff3c58b52777836ce945522a68"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/cache/zipball/c9eadeb743ac6199f7eec423cb9426bc518b7b03",
-                "reference": "c9eadeb743ac6199f7eec423cb9426bc518b7b03",
+                "url": "https://api.github.com/repos/doctrine/cache/zipball/9d141335b758cbff3c58b52777836ce945522a68",
+                "reference": "9d141335b758cbff3c58b52777836ce945522a68",
                 "shasum": ""
             },
             "require": {
@@ -709,7 +709,7 @@
                 "cache",
                 "caching"
             ],
-            "time": "2015-04-15 00:11:59"
+            "time": "2015-04-28 19:52:40"
         },
         {
             "name": "doctrine/collections",
@@ -1470,12 +1470,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpspec/prophecy.git",
-                "reference": "f4877a09b4210f4cb087823fd2410aee39bdaf02"
+                "reference": "3132b1f44c7bf2ec4c7eb2d3cb78fdeca760d373"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/f4877a09b4210f4cb087823fd2410aee39bdaf02",
-                "reference": "f4877a09b4210f4cb087823fd2410aee39bdaf02",
+                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/3132b1f44c7bf2ec4c7eb2d3cb78fdeca760d373",
+                "reference": "3132b1f44c7bf2ec4c7eb2d3cb78fdeca760d373",
                 "shasum": ""
             },
             "require": {
@@ -1522,7 +1522,7 @@
                 "spy",
                 "stub"
             ],
-            "time": "2015-04-25 21:18:56"
+            "time": "2015-04-27 22:15:08"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -1776,12 +1776,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "60bbaff8602bd8eaae76196f6427b4b2396c72fb"
+                "reference": "13a957b45df0b04f2e3b1fabd4a83eb4e5e5046a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/60bbaff8602bd8eaae76196f6427b4b2396c72fb",
-                "reference": "60bbaff8602bd8eaae76196f6427b4b2396c72fb",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/13a957b45df0b04f2e3b1fabd4a83eb4e5e5046a",
+                "reference": "13a957b45df0b04f2e3b1fabd4a83eb4e5e5046a",
                 "shasum": ""
             },
             "require": {
@@ -1840,7 +1840,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-04-18 15:51:25"
+            "time": "2015-04-29 13:03:58"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
